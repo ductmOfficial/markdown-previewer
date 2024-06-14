@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 // third-party
-import { Container, Row, Col, Form } from 'react-bootstrap';
-import { marked } from 'marked';
+import { Container, Row, Col, Form } from "react-bootstrap";
+import { marked } from "marked";
 
 // styles
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 const initialMarkdown = `
 # Heading 1
@@ -30,14 +30,14 @@ function App() {
   const [markdown, setMarkdown] = useState(initialMarkdown);
 
   useEffect(() => {
-    document.getElementById('preview').innerHTML = marked(initialMarkdown, {
+    document.getElementById("preview").innerHTML = marked(initialMarkdown, {
       breaks: true,
     });
   }, []);
 
   const handleChange = (event) => {
     setMarkdown(event.target.value);
-    document.getElementById('preview').innerHTML = marked(event.target.value, {
+    document.getElementById("preview").innerHTML = marked(event.target.value, {
       breaks: true,
     });
   };
