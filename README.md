@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Markdown Previewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Markdown Previewer is a simple web application that allows you to write and preview GitHub-flavored markdown in real-time. The app is built using React and styled with Bootstrap and React-Bootstrap.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Real-time Preview**: As you type markdown in the editor, the preview pane updates in real-time to show the rendered HTML.
+- **GitHub Flavored Markdown**: Supports GitHub-flavored markdown, including headings, links, inline code, code blocks, lists, blockquotes, images, bold text, and line breaks.
+- **Bootstrap Styling**: Clean and responsive UI styled with Bootstrap and React-Bootstrap.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `yarn test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/ductmOfficial/markdown-previewer.git
+cd markdown-previewer
+```
 
-### `yarn build`
+2. Install dependencies using Yarn:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+yarn start
+```
 
-### `yarn eject`
+The app should now be running on `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Editor**: On the left side of the screen, you'll find a textarea where you can input your markdown text.
+2. **Preview**: On the right side of the screen, you'll see the HTML preview of your markdown text. The preview updates in real-time as you type.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Default Markdown
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+When the app first loads, it contains default markdown text that includes examples of various markdown elements such as headings, links, code blocks, lists, blockquotes, images, bold text, and line breaks.
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React**: A JavaScript library for building user interfaces.
+- **Bootstrap**: A CSS framework for building responsive and mobile-first websites.
+- **React-Bootstrap**: Bootstrap components built with React.
+- **Marked**: A markdown parser and compiler.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
